@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
+import logo from "./logo.svg"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* 
+      Burda direkt böyle çağıarabiliyoruz public altındaki dosyalar direk ana dizindeki url 0 dan gelebiliyor.
+      public altındaki dosyalar statikdir yani her yerde kullanılıcak ise oraya koy ör favicon ör header logo
+      <img src="favicon.ico"/>
+      */} 
+      <img src="favicon.ico"/>
+      {/* 
+      import logo from "./logo.svg"
+      Burda ise farklı klasörder bir resim aldık ama once bunu inport etmemiz gerekiyor.
+      <img src={logo} />
+      */} 
+      <img src={logo} />
+
     </div>
   );
 }
